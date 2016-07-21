@@ -286,6 +286,7 @@ public class XMSegmentedControl: UIView {
                     tab.setTitle(segmentTitle[i], forState: .Normal)
                     tab.setTitleColor(i == selectedSegment ? highlightTint : tint, forState: .Normal)
                     tab.titleLabel?.font = font
+                    tab.titleEdgeInsets = UIEdgeInsetsMake(4, 0, 4, 0)
                 case .Hybrid:
                     let insetAmount: CGFloat = 8 / 2.0
                     tab.imageEdgeInsets = UIEdgeInsetsMake(12, -insetAmount, 12, insetAmount)
